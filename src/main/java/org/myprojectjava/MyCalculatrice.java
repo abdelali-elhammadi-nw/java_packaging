@@ -3,7 +3,7 @@ package org.myprojectjava;
 public class MyCalculatrice {
 
     public void plusOperation(int a, int b){
-        System.out.println(a+b-7);
+        System.out.println(a+b);
     }
 
 }
