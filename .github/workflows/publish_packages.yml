@@ -3,6 +3,7 @@ on: push
 jobs:
   publish:
     runs-on: ubuntu-latest 
+      working-directory: "project/java_packaging"
     permissions: 
       contents: read
       packages: write 
