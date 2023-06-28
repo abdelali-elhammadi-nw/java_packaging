@@ -6,6 +6,7 @@ target/
 uploads/
 ../uploads
 ### IntelliJ IDEA ###
+**/.idea/
 .idea/
 *.iws
 *.iml
