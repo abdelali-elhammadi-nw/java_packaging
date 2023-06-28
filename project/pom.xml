@@ -11,7 +11,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/abdelali4/keycloak</url>
+            <url>https://maven.pkg.github.com/abdelali-elhammadi-nw/java_packaging</url>
         </repository>
     </distributionManagement>
     <properties>
