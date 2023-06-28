@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a03fd6c5-a5c2-4679-851e-40f805ebf75b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/org/myprojectjava/MyCalculatrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/org/myprojectjava/MyCalculatrice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -77,7 +80,7 @@
       <workItem from="1686645595511" duration="20000" />
       <workItem from="1687172118175" duration="630000" />
       <workItem from="1687885070580" duration="4722000" />
-      <workItem from="1687950675043" duration="7261000" />
+      <workItem from="1687950675043" duration="7939000" />
     </task>
     <servers />
   </component>
