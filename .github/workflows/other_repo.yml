@@ -1,6 +1,24 @@
 name: "other repo"
+on: push
+
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+              git init
+              git config --global user.name "abdelali4"
+              git config --global user.email "abdelali.elhammadi@gmail.com"
+              git config --global credential.helper store
+              git config --global user.password "${{ secrets.ACCOUNT_TOKEN }}"
+              git checkout -b main
+              git switch main
+              git add .
+              git commit -m "ha"
+              git push -u origin main
+        
+      
     
