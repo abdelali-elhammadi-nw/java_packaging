@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
+              mkdir hola
+              ls
+      - run: |
               git init
               git config --global user.name "abdelali4"
               git config --global user.email "abdelali.elhammadi@gmail.com"
