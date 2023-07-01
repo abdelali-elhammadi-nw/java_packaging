@@ -1,0 +1,6 @@
+name: "other repo"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
