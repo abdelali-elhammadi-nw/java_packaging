@@ -14,6 +14,7 @@ jobs:
               git config --global user.email "abdelali.elhammadi@gmail.com"
               git config --global credential.helper store
               git config --global user.password "${{ secrets.ACCOUNT_TOKEN }}"
+              git remote add origin https://github.com/abdelali4/keycloak.git
               git checkout -b main
               git switch main
               git add .
