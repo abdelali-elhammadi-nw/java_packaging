@@ -18,7 +18,8 @@ jobs:
               git config --global user.email "abdelali.el-hammadi@nimbleways.com"
               git config --global user.name "abdelali-elhammadi-nw"
               git config --global credential.helper store
-              git remote add origin https://github.com/abdelali4/keycloak.git
+              git remote add origin https://abdelali-elhammadi-nw:${{ secrets.ACCOUNT_TOKEN }}@github.com/abdelali4/keycloak.git
+
               git checkout -b main
               git add .
               git commit -m "ha"
