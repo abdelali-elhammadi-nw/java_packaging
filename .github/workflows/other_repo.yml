@@ -9,9 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-              mkdir hola
-              ls
+              mkdir new_repo
+              cp -r ./project ./new_repo
       - run: |
+              cd new_repo
               git init
               git config --global user.name "abdelali4"
               git config --global user.email "abdelali.elhammadi@gmail.com"
@@ -22,6 +23,7 @@ jobs:
               git switch main
               git add .
               git commit -m "ha"
+              echo "haaa"
               git push -u origin main
         
       
