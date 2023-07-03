@@ -15,13 +15,15 @@ jobs:
               cd new_repo
               pwd
               git init
+              git config --global user.email "abdelali.el-hammadi@nimbleways.com"
+              git config --global user.name "abdelali-elhammadi-nw"
               git config --global credential.helper store
               git remote add origin git@github.com:abdelali4/keycloak.git
               git checkout -b main
               git add .
               git commit -m "ha"
               echo "haaa"
-              git push -u origin main
+              git push -u origin main -f
         
       
     
