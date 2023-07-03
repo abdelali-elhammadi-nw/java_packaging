@@ -13,6 +13,7 @@ jobs:
               cp -r ./project ./new_repo
       - run: |
               cd new_repo
+              pwd
               git init
               git config --global user.name "abdelali4"
               git config --global user.email "abdelali.elhammadi@gmail.com"
@@ -20,7 +21,6 @@ jobs:
               git config --global user.password "${{ secrets.ACCOUNT_TOKEN }}"
               git remote add origin https://github.com/abdelali4/keycloak.git
               git checkout -b main
-              git switch main
               git add .
               git commit -m "ha"
               echo "haaa"
