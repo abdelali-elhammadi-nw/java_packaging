@@ -1,7 +1,6 @@
 name: "other repo"
 on: push
 
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -9,27 +8,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-              mkdir new_repo
-              cp -r ./project/. ./new_repo
+          mkdir new_repo
+          cp -r ./project/. ./new_repo
       - run: |
-              cd new_repo
-              git init
-              git config --global user.name "abdelali-elhammadi-nw"
-              git config --global user.email "abdelali.el-hammadi@nimbleways.com"
-              git remote add origin https://abdelali-elhammadi-nw:${{ secrets.ACCOUNT_TOKEN }}@github.com/abdelali4/keycloak.git
-
-              git checkout -b main
-              git add .
-              git commit -m "ha"
-              echo "haaa"
-              git push -u origin main -f
-              
+          cd new_repo
+          git init
+          git config --global user.name "abdelali-elhammadi-nw"
+          git config --global user.email "abdelali.el-hammadi@nimbleways.com"
+          git remote add origin https://abdelali-elhammadi-nw:${{ secrets.ACCOUNT_TOKEN }}@github.com/abdelali4/keycloak.git
+          git checkout -b main
+          git add .
+          git commit -m "ha"
+          echo "haaa"
+          git push -u origin main -f
       - name: Create Release
         uses: actions/create-release@v1
         with:
-          tag_name: v2.0.0
-          release_name: Release v2.0.0
+          tag_name: v1.0.0
+          release_name: Release v1.0.0
           draft: false
           prerelease: false
-      
-    
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCOUNT_TOKEN }}
