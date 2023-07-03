@@ -10,11 +10,12 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
               mkdir new_repo
-              cp -r ./project ./new_repo
+              cp -r ./project/. ./new_repo
       - run: |
               cd new_repo
-              pwd
               git init
+              git config --global user.name "abdelali-elhammadi-nw"
+              git config --global user.email "abdelali.el-hammadi@nimbleways.com"
               git remote add origin https://abdelali-elhammadi-nw:${{ secrets.ACCOUNT_TOKEN }}@github.com/abdelali4/keycloak.git
 
               git checkout -b main
